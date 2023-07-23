@@ -18,13 +18,12 @@ return (precision);
 precision = 0;
 for (curr_i += 1; format[curr_i] != '\0'; curr_i++)
 {
-if (isdigit(format[curr_i]))
+if (is_digit(format[curr_i]))
 {
 precision *= 10;
 precision += format[curr_i] - '0';
 }
-else
-if (format[curr_i] == '*')
+else if (format[curr_i] == '*')
 {
 curr_i++;
 precision = va_arg(list, int);
