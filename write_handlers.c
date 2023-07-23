@@ -42,7 +42,7 @@ length, padd, extra_ch));
  *
  * Return: Number of printed chars
  */
-int write_num(int ind, char buffer[], int flags, int length
+int write_num(int ind, char buffer[], int flags, int length,
 int width, int prec, char padd, char extra_c)
 {
 int i, padd_start = 1;
